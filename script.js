@@ -82,8 +82,8 @@ function handleClick(number) {
 
     if (operatorRegex.test(String(number))) {
         if (fullOp === '') return;
-        
         if (operatorRegex.test(fullOp.slice(-1))) return;
+        if (operatorRegex.test(fullOp)) return;
     }
     
 
